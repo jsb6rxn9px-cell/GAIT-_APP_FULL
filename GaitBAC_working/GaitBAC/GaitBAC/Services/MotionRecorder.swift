@@ -30,7 +30,7 @@ final class MotionRecorder: ObservableObject {
         return q
     }()
 
-    private var samples: [SensorSample] = []
+    private(set) var samples: [SensorSample] = []
     private var t0Sample: TimeInterval?        // time of first sample (relative)
     private var targetHz: Int = 100
     private var beeps: Bool = true

@@ -11,7 +11,7 @@ final class AppState: ObservableObject {
     @Published var settings = AppSettings()
     @Published var consentGranted: Bool = false
     @Published var sessions: [SessionRecord] = []
-
+    @Published var earlyPrediction: PredictResponsePayload?
     let recorder = MotionRecorder()
 
     init() {
